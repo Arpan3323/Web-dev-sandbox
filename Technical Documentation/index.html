@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      
+      <nav id="navbar">
+        <header><h1>JS Documentation</h1></header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction" accesskey="1">Introduction</a></li>
+          <li><a class="nav-link" href="#What_you_should_already_know"accesskey="2">What you should already know</a></li>
+          <li><a class="nav-link" href="#JavaScript_and_Java" accesskey="3">JavaScript and Java</a></li>
+          <li><a class="nav-link" href="#Hello_world" accesskey="4">Hello world</a></li>
+          <li><a class="nav-link" href="#if_else_statement" accesskey="3">if else statement</a></li>
+          <li><a class="nav-link" href="#Reference" accesskey="3">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-doc">
+        
+        <section class="main-section" id="Introduction">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+          <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+
+          <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+          <ul>
+            <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+            <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+          </ul>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+          <header>
+            <h2>What you should already know</h2>
+            
+          </header>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Good working knowledge of HyperText Markup Language (HTML). Some programming experience.</li>
+            <li>If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+          </ul>
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+          <header>
+            <h2>JavaScript and Java</h2>
+          </header>
+          <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+          <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+
+          <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+          
+        </section>
+
+        <section class="main-section" id="Hello_world">
+          <header>
+            <h2>Hello world</h2>
+          </header>
+          <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+          <div>
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }</code>
+            <code>greetMe("World");</code>
+          </div>
+          <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+        </section>
+        <section class="main-section" id="if_else_statement">
+          <header>
+            <h2>if else statement</h2>
+          </header>
+          <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+          <div>
+
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
+          </div>
+
+          <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+            <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+            <div>
+              <code>if (condition_1) { statement_1; } else if (condition_2) {</code>
+              <code>statement_2; } else if (condition_n) { statement_n; } else {</code>
+              <code>statement_last; }</code>
+            </div>
+
+        </section>  
+        <section class="main-section" id="Reference">
+          <header>
+            <h2>Reference</h2>
+          </header>
+            <p>All the documentation in this page is taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a><p>
+        </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
