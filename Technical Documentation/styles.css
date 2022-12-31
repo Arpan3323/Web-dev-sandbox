@@ -1,0 +1,46 @@
+
+body{
+  font-family: "Gill Sans", sans-serif;
+  margin: 0;
+}
+
+#navbar{
+  border-right: solid gray;
+   width: 25%;
+   height: 100%;
+   position: fixed;
+   overflow: auto;
+}
+
+
+#navbar ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+#navbar li a{
+  color: inherit;
+  padding: 10px;
+  
+  display: block;
+  font-size: 20px;
+  border-bottom: solid
+}
+
+#main-doc{
+    margin-left: 25%;
+   padding: 10px 20px;
+   
+}
+
+@media (max-width: 600px){
+  #navbar{
+    width: 250px;
+    
+  }
+
+  #main-doc{
+    margin-left: 250px;
+    
+  }
+}
